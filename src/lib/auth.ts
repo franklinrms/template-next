@@ -47,6 +47,7 @@ export const authConfig = {
     }),
   ],
   callbacks: {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     async jwt({ token, user }: { token: JWT; user?: any }) {
       // Persistir dados do usuário no JWT token
       if (user) {
